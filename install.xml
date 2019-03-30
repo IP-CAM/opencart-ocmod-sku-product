@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+        <name>Product SKU</name>
+        <code>6701</code>
+        <version>1.0</version>
+        <author>Nabtron | nabtron.com</author>
+        <file path="catalog/controller/product/product.php">
+            <operation>
+                <search>
+                    <![CDATA[
+                        $data['heading_title'] = $product_info['name'];
+                    ]]>
+                </search>
+                <add position="after">
+                    <![CDATA[
+                        $data['sku'] = $product_info['sku'];
+                    ]]>
+                </add>
+            </operation>
+        </file>
+        <file path="catalog/language/en-gb/product/product.php">
+            <operation>
+                <search>
+                    <![CDATA[
+                        $_['text_model']               = 'Product Code:';
+                    ]]>
+                </search>
+                <add position="after">
+                    <![CDATA[
+                        $_['text_sku']               = 'SKU:';
+                    ]]>
+                </add>
+            </operation>
+        </file>
+        <file path="catalog/view/theme/default/template/product/product.twig">
+            <operation>
+                <search>
+                    <![CDATA[
+                        <!-- product_sku -->
+                    ]]>
+                </search>
+                <add position="after">
+                    <![CDATA[
+                        {% if sku %}
+                        <li><span>{{ text_sku }}</span> {{ sku }}</li>
+                        {% endif %}
+                    ]]>
+                </add>
+            </operation>
+        </file>
+</modification>
