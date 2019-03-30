@@ -18,3 +18,5 @@ Display SKU (Stock Keeping Unit) of a product on the frontend of product page in
   <li>4. clear modifications cache</li>
   <li>5. clear opencart cache</li>
 </ul>
+
+reference: https://nabtron.com/opencart-ocmod-product-sku/
