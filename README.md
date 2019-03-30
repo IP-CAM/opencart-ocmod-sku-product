@@ -10,6 +10,7 @@ Display SKU (Stock Keeping Unit) of a product on the frontend of product page in
 <pre class="wp-block-preformatted">&lt;!-- product_sku --&gt;</pre>
 <!-- /wp:preformatted -->
 
+<h2>How to install OCMOD</h2>
 <ul>
   <li>1. Download the install.xml file</li>
   <li>2. Zip the file (not the folder) and name it: productsku.ocmod.zip (important)</li>
